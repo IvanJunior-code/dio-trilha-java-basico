@@ -8,12 +8,13 @@ public class ContaTerminal {
 
         System.out.print("Por favor, digite o número da Agência: ");
         int numero = scanner.nextInt();
+        scanner.nextLine(); // Limpa o buffer após nextInt()
 
         System.out.print("Por favor, digite a Agência: ");
-        String agencia = scanner.next();
+        String agencia = scanner.nextLine();
 
         System.out.print("Por favor, digite o nome do cliente: ");
-        String nomeCliente = scanner.next();
+        String nomeCliente = scanner.nextLine();
 
         System.out.print("Por favor, digite o saldo: ");
         double saldo = scanner.nextDouble();
