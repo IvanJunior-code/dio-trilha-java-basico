@@ -1,3 +1,4 @@
+package edu.projetoiphone.musica;
 public class ReprodutorMusical {
     public void tocar() {
         System.out.println("Tocando.");
@@ -8,6 +9,6 @@ public class ReprodutorMusical {
     }
 
     public void selecionarMusica(String musica) {
-        System.out.println("Música " + musica + " selecionada.");
+        System.out.println("Música \"" + musica + "\" selecionada.");
     }
 }

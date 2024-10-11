@@ -1,3 +1,4 @@
+package edu.projetoiphone.telefone;
 public class AparelhoTelefonico {
     public void ligar() {
         System.out.println("Ligando...");

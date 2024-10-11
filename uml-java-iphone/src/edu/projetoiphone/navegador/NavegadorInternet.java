@@ -1,3 +1,4 @@
+package edu.projetoiphone.navegador;
 public class NavegadorInternet {
     public void exibirPagina(String url) {
         System.out.println("Exibindo página web de " + url);
