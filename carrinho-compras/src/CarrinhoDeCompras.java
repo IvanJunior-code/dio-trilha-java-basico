@@ -78,7 +78,7 @@ public class CarrinhoDeCompras {
         System.out.println("\n");
         carrinhoCompras.exibirItens();
 
-        System.out.println("\n" + carrinhoCompras.calcularValorTotal());
+        System.out.println("\nO valor total do carrinho é de R$" + carrinhoCompras.calcularValorTotal() + ".");
         
     }
 }
