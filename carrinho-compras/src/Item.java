@@ -13,11 +13,11 @@ public class Item {
         return nome;
     }
     
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
     
-    public Integer getQuantidade() {
+    public int getQuantidade() {
         return quantidade;
     }
 
@@ -25,11 +25,11 @@ public class Item {
         this.nome = nome;
     }
     
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
     
-    public void setQuantidade(Integer quantidade) {
+    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 
