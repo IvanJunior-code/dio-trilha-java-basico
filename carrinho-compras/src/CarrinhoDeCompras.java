@@ -51,12 +51,16 @@ public class CarrinhoDeCompras {
 
     public void exibirItens() {
         //System.out.println(itemList);
-        int numeroItem = itemList.size();
-        for (Item i : itemList) {
-            System.out.println("Item número " + (++numeroItem - itemList.size()) + ":" +
-            "\n\tNome: " + i.getNome() +
-            "\n\tPreço: R$" + i.getPreco() +
-            "\n\tQuantidade: " + i.getQuantidade());
+        if (!itemList.isEmpty()) {
+            int numeroItem = itemList.size();
+            for (Item i : itemList) {
+                System.out.println("Item número " + (++numeroItem - itemList.size()) + ":" +
+                "\n\tNome: " + i.getNome() +
+                "\n\tPreço: R$" + i.getPreco() +
+                "\n\tQuantidade: " + i.getQuantidade());
+            }
+        } else {
+            System.out.println("A lista está vazia.");
         }
     }
 
@@ -67,6 +71,7 @@ public class CarrinhoDeCompras {
     public static void main(String[] args) {
         CarrinhoDeCompras carrinhoCompras = new CarrinhoDeCompras();
         System.out.println("\n\nO número total de itens do carrinho é de " + carrinhoCompras.obterTotalItens());
+        carrinhoCompras.exibirItens();
 
         carrinhoCompras.adicionarItem("Produto 1", 52, 1);
         carrinhoCompras.adicionarItem("Produto 2", 10, 1);

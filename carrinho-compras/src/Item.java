@@ -1,9 +1,9 @@
 public class Item {
     private String nome;
-    private Double preco;
-    private Integer quantidade;
+    private double preco;
+    private int quantidade;
 
-    public Item(String nome, Double preco, Integer quantidade) {
+    public Item(String nome, double preco, int quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
