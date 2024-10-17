@@ -38,11 +38,15 @@ public class CarrinhoDeCompras {
 
     //retorna o valor total do carrinho
     public double calcularValorTotal() {
-        double total = 0;
-        for (Item i : itemList) {
-            total += i.getPreco() * i.getQuantidade();
+        if (!itemList.isEmpty()) {
+            double total = 0;
+            for (Item i : itemList) {
+                total += i.getPreco() * i.getQuantidade();
+            }
+            return total;
+        } else {
+            return 0;
         }
-        return total;
     }
 
     public void exibirItens() {
