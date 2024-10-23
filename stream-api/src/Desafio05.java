@@ -12,6 +12,16 @@ public class Desafio05 {
          * console.
          */
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
- 
+
+        long quantidadeMaiorQueCinco = numeros.stream()
+                .filter(n -> n > 5)
+                .count();
+
+        double somaMaiorQueCinco = numeros.stream()
+                .filter(n -> n > 5)
+                .reduce(0, (n1, n2) -> n1 + n2);
+        
+        System.out.println("A média dos números maiores que 5 é de " + (somaMaiorQueCinco / quantidadeMaiorQueCinco));
+        
     }
 }
