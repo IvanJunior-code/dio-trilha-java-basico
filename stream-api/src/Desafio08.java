@@ -17,6 +17,13 @@ public class Desafio08 {
         //         .reduce(0, (n1, n2) -> n1 + n2);
         // System.out.println("A soma de todos os números da lista é de " + soma + ".");
         
+        int somaDigitos = numeros.stream()
+                .map(n -> String.valueOf(n))
+                .flatMapToInt(s -> s.chars())
+                .map(Character::getNumericValue)
+                .sum();
+        
+        System.out.println("A soma de todos os dígitos dos números da lista é de " + somaDigitos + ".");
     }
 
 }
