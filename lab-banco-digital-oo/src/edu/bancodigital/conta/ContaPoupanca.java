@@ -1,3 +1,7 @@
+package edu.bancodigital.conta;
+
+import edu.bancodigital.cliente.Cliente;
+
 public class ContaPoupanca extends Conta {
 
     public ContaPoupanca(Cliente cliente) {

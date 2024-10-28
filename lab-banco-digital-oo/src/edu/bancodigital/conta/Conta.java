@@ -1,3 +1,8 @@
+package edu.bancodigital.conta;
+
+import edu.bancodigital.cliente.Cliente;
+
+
 public abstract class Conta implements IConta {
 
     private static int SEQUENCIAL = 1;

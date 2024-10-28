@@ -1,3 +1,10 @@
+package edu.bancodigital;
+
+import edu.bancodigital.cliente.Cliente;
+import edu.bancodigital.conta.Conta;
+import edu.bancodigital.conta.ContaCorrente;
+import edu.bancodigital.conta.ContaPoupanca;
+
 public class App {
     public static void main(String[] args) throws Exception {
 

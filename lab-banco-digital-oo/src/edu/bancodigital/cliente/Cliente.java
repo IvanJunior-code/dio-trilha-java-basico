@@ -1,3 +1,5 @@
+package edu.bancodigital.cliente;
+
 public class Cliente {
     
     public String nome;
