@@ -52,9 +52,13 @@ public class App {
         contaPoupanca.transferir(1, contaPoupanca2);
         contaPoupanca2.imprimirSaldo();
         contaPoupanca.imprimirSaldo();
+        contaPoupanca.sacar(149);
 
         System.out.println(banco.listarContas());
         System.out.println("Quantidade de contas que o banco possui: " + banco.mostrarQuantidadeContas());
+        System.out.println("Quantidade de contas com saldo zerado: " + banco.mostrarQuantidadeContasSaldoZerado());
+        System.out.println("Lista dos nomes dos titulares das contas: " + banco.listarApenasNomesDosTitulares());
+        System.out.println("Soma do saldo de todas as contas: " + banco.somarSaldoDasContas());
         
     }
 }
