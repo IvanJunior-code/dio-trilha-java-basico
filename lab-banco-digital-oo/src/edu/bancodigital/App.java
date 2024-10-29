@@ -10,6 +10,9 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
+        Banco banco = new Banco("Banco Teste");
+        System.out.println(banco.getNome());
+
         PessoaFisica cliente1 = new PessoaFisica("Cliente 1 Pessoa Fisica", "Endereço do cliente 1", "111.111.111-11");
         PessoaFisica cliente2 = new PessoaFisica("Cliente 2 Pessoa Fisica", "Endereço do cliente 2", "222.222.222-22");
 
@@ -29,6 +32,7 @@ public class App {
         System.out.println("Endereço: " + cliente2.getEndereco() + ".");
 
         Conta contaCorrente = new ContaCorrente(cliente1);
+        banco.adicionarConta(contaCorrente);
         contaCorrente.imprimirSaldo();
         contaCorrente.depositar(250);
         contaCorrente.imprimirSaldo();
@@ -36,17 +40,19 @@ public class App {
         contaCorrente.imprimirSaldo();
         System.out.println("\n\n");
         Conta contaPoupanca = new ContaPoupanca(cliente1);
+        banco.adicionarConta(contaPoupanca);
         contaPoupanca.imprimirSaldo();
         contaCorrente.transferir(150, contaPoupanca);
         contaPoupanca.imprimirSaldo();
         contaCorrente.imprimirSaldo();
 
         Conta contaPoupanca2 = new ContaPoupanca(cliente2);
+        banco.adicionarConta(contaPoupanca2);
         contaPoupanca2.imprimirSaldo();
         contaPoupanca.transferir(1, contaPoupanca2);
         contaPoupanca2.imprimirSaldo();
         contaPoupanca.imprimirSaldo();
 
-
+        System.out.println(banco.listarContas());
     }
 }
