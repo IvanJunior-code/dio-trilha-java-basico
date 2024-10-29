@@ -1,9 +1,9 @@
 package edu.bancodigital.cliente;
 
-public class Cliente {
+public abstract class Cliente {
     
-    protected String nome;
-    protected String endereco;
+    private String nome;
+    private String endereco;
 
     public Cliente(String nome, String endereco) {
         this.nome = nome;
