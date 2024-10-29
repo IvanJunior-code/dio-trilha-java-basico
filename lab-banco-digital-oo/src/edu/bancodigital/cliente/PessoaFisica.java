@@ -15,10 +15,6 @@ public class PessoaFisica extends Cliente {
         return cpf;
     }
 
-    public void setCPF(String cpf) {
-        this.cpf = cpf;
-    }
-
     public boolean getContaConjunta() {
         return contaConjunta;
     }
