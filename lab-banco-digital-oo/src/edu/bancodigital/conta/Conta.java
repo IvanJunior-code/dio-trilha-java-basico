@@ -53,5 +53,15 @@ public abstract class Conta implements IConta {
         System.out.println(String.format("Número: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
+
+    public Cliente getCliente() {
+        return this.cliente;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("\n\nConta Tipo='%s', \nTitular='%s', \nAgencia='%s', \nNumero='%s', \nSaldo=%.2f\n",
+                this.getClass().getSimpleName(), cliente.getNome(), agencia, numero, saldo);
+    }
     
 }
