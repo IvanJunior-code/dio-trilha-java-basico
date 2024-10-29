@@ -7,7 +7,7 @@ import java.util.List;
 public class Banco {
     
     private final String nome;
-    private List<Conta> contas;
+    private List<Conta> contas = null;
 
     public Banco(String nome) {
         this.nome = nome;
