@@ -1,19 +1,21 @@
 package edu.bancodigital;
 
-import java.util.List;
-
 import edu.bancodigital.conta.Conta;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Banco {
     
-    private String nome;
+    private final String nome;
     private List<Conta> contas;
+
+    public Banco(String nome) {
+        this.nome = nome;
+        this.contas = new ArrayList<>();
+    }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 }
