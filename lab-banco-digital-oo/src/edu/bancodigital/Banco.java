@@ -30,4 +30,8 @@ public class Banco {
         return new ArrayList<>(this.contas);
     }
 
+    public long mostrarQuantidadeContas() {
+        return listarContas().stream().count();
+    }
+
 }

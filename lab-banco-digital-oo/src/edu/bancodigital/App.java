@@ -54,5 +54,7 @@ public class App {
         contaPoupanca.imprimirSaldo();
 
         System.out.println(banco.listarContas());
+        System.out.println("Quantidade de contas que o banco possui: " + banco.mostrarQuantidadeContas());
+        
     }
 }
