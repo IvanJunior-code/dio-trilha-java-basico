@@ -1,32 +1,27 @@
 package edu.bancodigital;
 
-import edu.bancodigital.cliente.Cliente;
-import edu.bancodigital.conta.Conta;
-import edu.bancodigital.conta.ContaCorrente;
-import edu.bancodigital.conta.ContaPoupanca;
-
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Cliente cliente1 = new Cliente();
-        cliente1.setNome("Cliente 1");
+        // Cliente cliente1 = new Cliente();
+        // cliente1.setNome("Cliente 1");
 
-        Conta contaCorrente = new ContaCorrente(cliente1);
-        contaCorrente.imprimirSaldo();
-        contaCorrente.depositar(250);
-        contaCorrente.imprimirSaldo();
-        contaCorrente.sacar(50);
-        contaCorrente.imprimirSaldo();
+        // Conta contaCorrente = new ContaCorrente(cliente1);
+        // contaCorrente.imprimirSaldo();
+        // contaCorrente.depositar(250);
+        // contaCorrente.imprimirSaldo();
+        // contaCorrente.sacar(50);
+        // contaCorrente.imprimirSaldo();
 
-        System.out.println("\n\n");
+        // System.out.println("\n\n");
         
-        Conta contaPoupanca = new ContaPoupanca(cliente1);
-        contaPoupanca.imprimirSaldo();
+        // Conta contaPoupanca = new ContaPoupanca(cliente1);
+        // contaPoupanca.imprimirSaldo();
 
-        contaCorrente.transferir(150, contaPoupanca);
+        // contaCorrente.transferir(150, contaPoupanca);
         
-        contaPoupanca.imprimirSaldo();
-        contaCorrente.imprimirSaldo();
+        // contaPoupanca.imprimirSaldo();
+        // contaCorrente.imprimirSaldo();
 
     }
 }
