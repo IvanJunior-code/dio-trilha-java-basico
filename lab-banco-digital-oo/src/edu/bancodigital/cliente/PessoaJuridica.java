@@ -2,19 +2,15 @@ package edu.bancodigital.cliente;
 
 public class PessoaJuridica extends Cliente {
     
-    private String cnpj;
+    private final String CNPJ;
 
-    public PessoaJuridica(String nome, String endereco, String cnpj) {
+    public PessoaJuridica(String nome, String endereco, String CNPJ) {
         super(nome, endereco);
-        this.cnpj = cnpj;
+        this.CNPJ = CNPJ;
     }
     
     public String getCNPJ() {
-        return cnpj;
-    }
-
-    public void setCNPJ(String cnpj) {
-        this.cnpj = cnpj;
+        return CNPJ;
     }
 
     public void emitirFaturaServico() {
