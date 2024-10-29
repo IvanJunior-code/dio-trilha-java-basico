@@ -1,6 +1,9 @@
 package edu.bancodigital;
 
 import edu.bancodigital.cliente.PessoaFisica;
+import edu.bancodigital.conta.Conta;
+import edu.bancodigital.conta.ContaCorrente;
+import edu.bancodigital.conta.ContaPoupanca;
 import java.util.Optional;
 
 public class App {
@@ -24,19 +27,26 @@ public class App {
         System.out.println("CPF: " + cliente2.getCPF() + ".");
         System.out.println("Nome: " + cliente2.getNome() + ".");
         System.out.println("Endereço: " + cliente2.getEndereco() + ".");
-        //System.out.println("Conta conjunta? " + cliente2.getSegundaPessoaFisica().getNome() + ".");
 
-        // Conta contaCorrente = new ContaCorrente(cliente1);
-        // contaCorrente.imprimirSaldo();
-        // contaCorrente.depositar(250);
-        // contaCorrente.imprimirSaldo();
-        // contaCorrente.sacar(50);
-        // contaCorrente.imprimirSaldo();
-        // System.out.println("\n\n");
-        // Conta contaPoupanca = new ContaPoupanca(cliente1);
-        // contaPoupanca.imprimirSaldo();
-        // contaCorrente.transferir(150, contaPoupanca);
-        // contaPoupanca.imprimirSaldo();
-        // contaCorrente.imprimirSaldo();
+        Conta contaCorrente = new ContaCorrente(cliente1);
+        contaCorrente.imprimirSaldo();
+        contaCorrente.depositar(250);
+        contaCorrente.imprimirSaldo();
+        contaCorrente.sacar(50);
+        contaCorrente.imprimirSaldo();
+        System.out.println("\n\n");
+        Conta contaPoupanca = new ContaPoupanca(cliente1);
+        contaPoupanca.imprimirSaldo();
+        contaCorrente.transferir(150, contaPoupanca);
+        contaPoupanca.imprimirSaldo();
+        contaCorrente.imprimirSaldo();
+
+        Conta contaPoupanca2 = new ContaPoupanca(cliente2);
+        contaPoupanca2.imprimirSaldo();
+        contaPoupanca.transferir(1, contaPoupanca2);
+        contaPoupanca2.imprimirSaldo();
+        contaPoupanca.imprimirSaldo();
+
+
     }
 }
