@@ -2,17 +2,17 @@ package edu.bancodigital.cliente;
 
 public class PessoaFisica extends Cliente {
 
-    private String cpf;
+    private final String CPF;
     private boolean contaConjunta = false;
     private PessoaFisica segundaPessoaFisica = null;
 
-    public PessoaFisica(String nome, String endereco, String cpf) {
+    public PessoaFisica(String nome, String endereco, String CPF) {
         super(nome, endereco);
-        this.cpf = cpf;
+        this.CPF = CPF;
     }
 
     public String getCPF() {
-        return cpf;
+        return CPF;
     }
 
     public boolean getContaConjunta() {
