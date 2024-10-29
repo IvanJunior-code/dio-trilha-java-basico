@@ -13,7 +13,7 @@ public class PessoaFisica extends Cliente {
     }
 
     public String getCPF() {
-        return CPF;
+        return this.CPF;
     }
 
     public Optional<PessoaFisica> getSegundaPessoaFisica() {
